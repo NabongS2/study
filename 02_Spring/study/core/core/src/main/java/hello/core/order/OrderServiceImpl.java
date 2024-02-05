@@ -1,23 +1,19 @@
 package hello.core.order;
 
 import hello.core.discount.DiscountPolicy;
-import hello.core.discount.FixDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
-import hello.core.member.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class OrderServiceImpl implements  OrderService{
 
-    private final MemberRepository memberRepository;
-    private final DiscountPolicy discountPolicy;
+    @Autowired private MemberRepository memberRepository;
+    @Autowired private DiscountPolicy discountPolicy;
 
-    @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 
     @Override
@@ -28,7 +24,27 @@ public class OrderServiceImpl implements  OrderService{
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
 
-    public MemberRepository getMemberRepository() {
-        return memberRepository;
-    }
+//    @Autowired(required = false) // 주입할 대상이 없어도 동작하게 하려면 @Autowired(required = false)
+//    public void setMemberRepository(MemberRepository memberRepository){
+//        System.out.println("수정자 주입 확인 memberRepository = " + memberRepository);
+//        this.memberRepository = memberRepository;
+//    }
+//
+//    @Autowired
+//    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+//        System.out.println("수정자 주입 확인 discountPolicy = " + discountPolicy);
+//        this.discountPolicy = discountPolicy;
+//    }
+
+    // 중요! 생성자가 딱 1개만 있으면 @Autowired를 생략해도 자동 주입 된다. 물론 스프링 빈에만 해당한다
+//    @Autowired // 생략 가능
+//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//        System.out.println("생성자 주입 확인 memberRepository = " + memberRepository);
+//        System.out.println("생성자 주입 확인 discountPolicy = " + discountPolicy);
+//
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy = discountPolicy;
+//    }
+
+
 }

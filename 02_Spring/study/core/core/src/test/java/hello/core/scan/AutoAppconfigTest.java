@@ -21,9 +21,9 @@ public class AutoAppconfigTest {
         assertThat(memberService).isInstanceOf(MemberService.class);
 
         // 필드 주입 확인용 필드에다 바로 주입
-        OrderServiceImpl bean = ac.getBean(OrderServiceImpl.class);
-        MemberRepository memberRepository = bean.getMemberRepository();
-        System.out.println("memberRepository = " + memberRepository);
+//        OrderServiceImpl bean = ac.getBean(OrderServiceImpl.class);
+//        MemberRepository memberRepository = bean.getMemberRepository();
+//        System.out.println("memberRepository = " + memberRepository);
 
     }
 }

@@ -15,11 +15,12 @@ import static org.springframework.context.annotation.ComponentScan.*;
         excludeFilters = @Filter(type = FilterType.ANNOTATION, classes = Configuration.class))
 public class AutoAppConfig {
 
-        // 수동으로 중복 되는 빈을 생성 해봄
-    @Bean(name = "memoryMemberRepository")
-    public MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+    // 수동으로 중복 되는 빈을 생성 해봄
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
+
 
 }
 

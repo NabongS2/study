@@ -1,6 +1,6 @@
 package hello.core.scan;
 
-import hello.core.AutoAppconfig;
+import hello.core.AutoAppConfig;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemberService;
 import hello.core.order.OrderServiceImpl;
@@ -15,14 +15,15 @@ public class AutoAppconfigTest {
 
     @Test
     void basicScan() {
-        ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppconfig.class);
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class);
 
         MemberService memberService = ac.getBean(MemberService.class);
         assertThat(memberService).isInstanceOf(MemberService.class);
 
-//        OrderServiceImpl bean = ac.getBean(OrderServiceImpl.class);
-//        MemberRepository memberRepository = bean.getMemberRepository();
-//        System.out.println("memberRepository = " + memberRepository);
+        // 필드 주입 확인용 필드에다 바로 주입
+        OrderServiceImpl bean = ac.getBean(OrderServiceImpl.class);
+        MemberRepository memberRepository = bean.getMemberRepository();
+        System.out.println("memberRepository = " + memberRepository);
 
     }
 }

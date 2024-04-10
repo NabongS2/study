@@ -1,71 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f7b79af-1877-472d-a0b4-172caa54b6e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/App_exam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/App_exam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/Exam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/Exam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/Product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/Usestate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/Usestate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_React/vite-project/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/01_React/vite-project/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/.idea/02_Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/.idea/02_Spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/src/main/java/hello/hellospring/HelloSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/src/main/java/hello/hellospring/HelloSpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/hello-spring/hello-spring/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/MemberApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/MemberApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/OrderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/discount/DiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/discount/DiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/discount/FixDiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/discount/FixDiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/discount/RateDiscountPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/CoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/CoreApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/member/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_Spring/study/core/core/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gitignore.txt" afterDir="false" />
-    </list>
+    <list default="true" id="5f7b79af-1877-472d-a0b4-172caa54b6e8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +28,9 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/0_nabong/document/00_workspace/nabong_workspace/02_Spring/study/core/core/build.gradle"
+    "last_opened_file_path": "/Users/leenahyeon/Desktop/workspace",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +41,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706341624922</updated>
+      <workItem from="1711020596453" duration="163000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

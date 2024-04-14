@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 // 간단한 회원 가입 폼
 // 1. 이름
 // 2. 생년월일
@@ -14,8 +14,15 @@ const Register = () => {
         bio: "",
     });
 
+    const countRef = useRef(0);
+    const inputRef = useRef();
+
+    // let count; // 리렌딩 될 때 마다 0으로 리셋
+
     const onChange = (e) => {
-        console.log(e.target.name, e.target.value);
+        countRef.current++;
+        // count++; // 변수는 변하면 리렌딩
+        console.log(countRef.current); // 수정 횟수를 알 수 있다.
 
         setInput({
             ...input,
@@ -25,11 +32,18 @@ const Register = () => {
         })
     }
 
+    const onSubmit = () => {
+        if(input.name === "") {
+            // 이름을 입력하는 DOM 요소 포커스
+            inputRef.current.focus();
+        }
+    }
 
     return (
         <div>
             <div>
                 <input
+                    ref={inputRef}
                     name='name' 
                     value={input.name} // 초기 값으로 설정
                     onChange={onChange}
@@ -57,6 +71,9 @@ const Register = () => {
                 <textarea name='bio' 
                 value={input.bio} onChange={onChange} />
             </div>
+
+            <button onClick={onSubmit}
+            >제출</button>
         </div>
     )
 };

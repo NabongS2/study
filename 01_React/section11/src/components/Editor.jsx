@@ -1,17 +1,19 @@
 import './Editor.css'
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
+import { TodoDispathContext } from '../App';
 
+const Editor = () => {
+    const {onCreate} = useContext(TodoDispathContext);
 
-const Editor = ({onCreate}) => {
     const [content, setContent] = useState("");
-    const contentRef = useRef();
+    const inputRef = useRef();
 
     const onChangeContent = (e) => {
         setContent(e.target.value);
     }
     const onSubmit = () => {
         if(content === "") {
-            contentRef.current.focus();
+            inputRef.current.focus();
             return;
         }
         onCreate(content);
@@ -26,7 +28,7 @@ const Editor = ({onCreate}) => {
     return(
         <div className='Editor'>
             <input 
-            ref={contentRef}
+            ref={inputRef}
             value={content}
             onKeyDown = {onKeyDown}
             onChange={onChangeContent}

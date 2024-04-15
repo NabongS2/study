@@ -1,5 +1,6 @@
 import './App.css'
-import { useState, useRef, useReducer, useCallback, createContext } from 'react';
+import { useState, useRef, useReducer, useCallback, 
+  createContext, useMemo } from 'react';
 
 import Editor from './components/Editor'
 import Header from './components/Header'
@@ -41,8 +42,8 @@ function reducer(state, action) {
     default : return state;
   }
 }
-
-const TodoContext = createContext();
+export const TodoStateContext = createContext();
+export const TodoDispathContext = createContext();
 
 function App() {
 
@@ -75,16 +76,19 @@ function App() {
     })
 
   },[]);
-  // 객체가 다시 리렌더링 되면 주소 값이 달라짐
 
-  // 마운트 될 때만 생성 할 수 있음.
-  // const func = useCallback(()=>{},[])
-
+  const memoizedDispatch = useMemo(()=>{
+    return {onCreate, onUpdate, onDelete}
+  },[])
   return (
     <div className='App'>
       <Header/>
-      <Editor onCreate={onCreate}/>
-      <List todos={todos} onUpdate={onUpdate} onDelete={onDelete}/>
+      <TodoStateContext.Provider value={todos}>
+        <TodoDispathContext.Provider  value={memoizedDispatch}>
+          <Editor/>
+          <List/>
+        </TodoDispathContext.Provider>
+      </TodoStateContext.Provider>
     </div>
   )
 }

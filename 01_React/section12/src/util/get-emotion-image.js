@@ -5,7 +5,7 @@ import emotion3 from "./../assets/emotion3.png";
 import emotion4 from "./../assets/emotion4.png";
 import emotion5 from "./../assets/emotion5.png";
 
-export function getEmtionImage (emotionId) {
+export function getEmotionImage (emotionId) {
     switch(emotionId) {
         case 1: return emotion1;
         case 2: return emotion2;

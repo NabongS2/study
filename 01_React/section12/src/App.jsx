@@ -12,15 +12,21 @@ import Edit from './pages/Edit';
 const mockData = [
   {
     id: 1,
-    createDate : new Date().getTime(),
+    createDate : new Date("2024-05-05").getTime(),
     emotionId : 1,
     content : "1번 일기 내용",
   },
   {
     id: 2,
-    createDate : new Date().getTime(),
+    createDate : new Date("2024-05-04").getTime(),
     emotionId : 2,
     content : "2번 일기 내용",
+  },
+  {
+    id: 3,
+    createDate : new Date("2024-04-01").getTime(),
+    emotionId : 3,
+    content : "3번 일기 내용",
   },
 ]
 
@@ -45,8 +51,8 @@ function reducer(state, action) {
 }
 
 // 하위 컴포넌트에 공급하기
-const DiaryStateContext = createContext();
-const DiaryDispatchContext = createContext();
+export const DiaryStateContext = createContext();
+export const DiaryDispatchContext = createContext();
 
 function App() {
   // 실제 데이터, 어떻게 변형 = 변형시키는 함수, 초기 값
@@ -97,24 +103,7 @@ function App() {
 
   return (
   <>
-    <button
-      onClick={()=>{
-        onCreate(new Date().getTime(), 1, "Hello")
-      }}
-    >버튼 추가 테스트</button>
-    <button
-      onClick={()=>{
-        onUpdate(1, new Date().getTime(), 3, "수정된 일기 입니다.")
-      }}
-    >버튼 수정 테스트</button>
 
-    <button
-      onClick={()=>{
-        onDelete(1)
-      }}
-    >버튼 삭제 테스트</button>
-
-    {/* 공급 받도록 감싸자 */}
     <DiaryStateContext.Provider value={data}> 
       <DiaryDispatchContext.Provider
           value={{

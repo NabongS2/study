@@ -8,46 +8,36 @@ import Diary from "./pages/Diary";
 import Notfound from './pages/Notfound';
 
 import Edit from './pages/Edit';
+import { useEffect, useState } from 'react';
 
-const mockData = [
-  {
-    id: 1,
-    createDate : new Date("2024-05-05").getTime(),
-    emotionId : 1,
-    content : "1번 일기 내용",
-  },
-  {
-    id: 2,
-    createDate : new Date("2024-05-04").getTime(),
-    emotionId : 2,
-    content : "2번 일기 내용",
-  },
-  {
-    id: 3,
-    createDate : new Date("2024-04-01").getTime(),
-    emotionId : 3,
-    content : "3번 일기 내용",
-  },
-]
 
 // 컴포넌트 외부에 상태 관리 코드 분리
 function reducer(state, action) {
+  let nextState;
 
   switch(action.type) {
-    case "CREATE" : return [action.data, ...state];
+    // 조회 nextState 보관 불필요
+    case "INIT" : return action.data;
+    case "CREATE" : 
+      nextState = [action.data, ...state];
+      break;
     case "UPDATE" : 
-      return state.map((item) => 
+      nextState = state.map((item) => 
         String(item.id) === String(action.data.id)
           ? action.data 
           : item
       );
+      break;
     case "DELETE" : 
-      return state.filter((item) => 
+      nextState = state.filter((item) => 
         String(item.id) !== String(action.data.id)
-      )
+      );
+      break;
     default : return state;
   }
+  localStorage.setItem("diary", JSON.stringify(nextState));
 
+  return nextState;
 }
 
 // 하위 컴포넌트에 공급하기
@@ -55,10 +45,43 @@ export const DiaryStateContext = createContext();
 export const DiaryDispatchContext = createContext();
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
   // 실제 데이터, 어떻게 변형 = 변형시키는 함수, 초기 값
-  const [data, dispatch] = useReducer(reducer, mockData);
-  // id 변수 값
-  const idRef = useRef(3);
+  const [data, dispatch] = useReducer(reducer, []);
+  const idRef = useRef(0); // id 변수 값
+
+  useEffect(() => {
+    const storeData = localStorage.getItem("diary");
+    if(!storeData) {
+      setIsLoading(false);
+      return;
+    }
+    const parseData = JSON.parse(storeData);
+
+    // 배열 아니면 리턴
+    if(!Array.isArray(parseData)) {
+      setIsLoading(false);
+      return;
+    }
+
+    let maxId = 0;
+    parseData.forEach((item)=> {
+        if(Number(item.id) > maxId) {
+          maxId = Number(item.id)
+        }
+      }
+    )
+    // console.log(maxId);
+    idRef.current = maxId + 1;
+
+    dispatch({
+      type : "INIT",
+      data : parseData,
+    })
+    setIsLoading(false);
+  },[])
 
   // 새로운 일기 추가
   const onCreate = (createDate, emotionId, content) => {
@@ -101,6 +124,9 @@ function App() {
     );
   };
 
+  if(isLoading){
+    return <div>데이터 로딩 중 입니다 ...</div>;
+  }
   return (
   <>
 

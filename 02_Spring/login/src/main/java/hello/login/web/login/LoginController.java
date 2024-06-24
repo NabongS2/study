@@ -53,7 +53,7 @@ public class LoginController {
 
     }
 
-    @PostMapping("/logout")
+//    @PostMapping("/logout")
     public String logoutV1(HttpServletResponse response) {
         expireCookie(response, "memberId");
         return "redirect:/";
@@ -64,7 +64,7 @@ public class LoginController {
         response.addCookie(cookie);
     }
 
-    @PostMapping("/login")
+//    @PostMapping("/login")
     public String loginV2(@Valid @ModelAttribute LoginForm form, BindingResult bindingResult, HttpServletResponse response) {
 
         if (bindingResult.hasErrors()) {
@@ -87,5 +87,65 @@ public class LoginController {
         return "redirect:/";
     }
 
+//    @PostMapping("/login")
+    public String loginV3(@Valid @ModelAttribute LoginForm form, BindingResult bindingResult,
+                          HttpServletRequest request) {
+        if (bindingResult.hasErrors()) {
+            return "login/loginForm";
+        }
+        Member loginMember = loginService.login(form.getLoginId(), form.getPassword());
+        log.info("login? {}", loginMember);
+        if (loginMember == null) {
+            bindingResult.reject("loginFail", "아이디 또는 비밀번호가 맞지 않습니다."); return "login/loginForm";
+        }
+        //로그인 성공 처리
+        // 세션이 있으면 있는 세션 반환, 없으면 신규 세션을 생성
+        HttpSession session = request.getSession();
+        // 세션에 로그인 회원 정보 보관
+        session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
+
+        return "redirect:/";
+    }
+
+//    @PostMapping("/logout")
+    public String logoutV3S(HttpServletRequest request) {
+        // 세션이 없으면 새로운 세션을 생성하지 않는다. `null` 을 반환한다.
+        HttpSession session = request.getSession(false);
+        if(session != null) {
+            session.invalidate(); // 있으면 세션 제거
+        }
+        return "redirect:/";
+    }
+
+    @PostMapping("/login")
+    public String loginV3Spring(@Valid @ModelAttribute LoginForm form, BindingResult bindingResult,
+                          HttpServletRequest request) {
+
+        if (bindingResult.hasErrors()) {
+            return "login/loginForm";
+        }
+        Member loginMember = loginService.login(form.getLoginId(), form.getPassword());
+        log.info("login? {}", loginMember);
+        if (loginMember == null) {
+            bindingResult.reject("loginFail", "아이디 또는 비밀번호가 맞지 않습니다."); return "login/loginForm";
+        }
+        //로그인 성공 처리
+        // 세션이 있으면 있는 세션 반환, 없으면 신규 세션을 생성
+        HttpSession session = request.getSession();
+        // 세션에 로그인 회원 정보 보관
+        session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
+
+        return "redirect:/";
+    }
+
+    @PostMapping("/logout")
+    public String logoutV3Spring(HttpServletRequest request) {
+        // 세션이 없으면 새로운 세션을 생성하지 않는다. `null` 을 반환한다.
+        HttpSession session = request.getSession(false);
+        if(session != null) {
+            session.invalidate(); // 있으면 세션 제거
+        }
+        return "redirect:/";
+    }
 
 }

@@ -1,32 +1,52 @@
+# Java 컴파일 파일
+*.class
+
+# Build 산출물
+/build/
+/target/
+/out/
+/bin/
+
+# Gradle 관련
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven 관련
+pom.properties
+
+# IDE 설정
 .classpath
 .project
-.metadata/
-bin/
 .settings/
-*.class
+/.metadata/
+/.factorypath
+
+# VS Code / IntelliJ
+.vscode/
+.idea/
+*.iml
+
+# Spring 관련
+.springBeans
+MANIFEST.MF
+*.log
+config.properties
+settings.json
+
+# 아카이브 & 폰트 파일
 *.war
 *.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
-
-# Servers 폴더
-Servers
-*.war
-*.tar.gz
-*.rar
 *.ttf
 *.woff
 
-#Spring 관련 폴더, 파일
-target
-/target/
-.springBeans
-pom.properties
-MANIFEST.MF
-*.log
-.factorypath
-settings.json
+# 서버 설정
+Servers
 
-config.properties
+# OS 별 불필요 파일
+.DS_Store
+Thumbs.db

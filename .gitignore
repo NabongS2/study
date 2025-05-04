@@ -1,0 +1,49 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+npm-debug.log*
+
+# Java/Spring
+*.class
+/build/
+/target/
+/out/
+/bin/
+.gradle/
+pom.properties
+.springBeans
+MANIFEST.MF
+
+# VSCode / IntelliJ
+.vscode/
+.idea/
+*.iml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# 환경 설정 및 보안
+.env
+.env.*
+settings.json
+config.properties
+
+# 아카이브 및 실행 파일
+*.log
+*.war
+*.jar
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.exe
+*.ttf
+*.woff
+
+# 서버 관련
+Servers/
+

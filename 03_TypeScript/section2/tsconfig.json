@@ -1,12 +1,10 @@
 {
     "compilerOptions": {
-        "target": "ESNext", // 자바스크립트 버전
-        "module": "ESNext", // 모듈 버전
-        "outDir": "dist", // 컴파일 파일 저장 위치
-        "strict": true, // 엄격한 타입 검사
-        // "strictNullChecks": false, // ! 엄격한 null 타입 검사 ( == numner 타입에 임시로 null을 넣을 수 있어)
-        "moduleDetection": "force", // 개별 모듈로 만들어주기
-        "skipLibCheck": true, // 불 필요한 타입 정의 파일의 타입 검사를 생략
+        "target": "ES2020",
+        "module": "CommonJS",
+        "outDir": "dist",
+        "strict": true,
+        "moduleDetection": "force"
     },
-    "include": ["src"], // 컴파일 파일 위치들
+    "include": ["src"]
 }

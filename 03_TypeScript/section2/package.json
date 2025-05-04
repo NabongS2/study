@@ -2,7 +2,6 @@
   "name": "section2",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +10,8 @@
   "description": "",
   "dependencies": {
     "@types/node": "^22.13.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
   }
 }

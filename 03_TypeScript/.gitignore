@@ -1,0 +1,9 @@
+# 공통 무시 항목
+node_modules/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# IDE/OS
+.vscode/
+.DS_Store
